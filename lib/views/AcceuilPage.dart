@@ -18,16 +18,16 @@ class _AcceuilPageState extends State<AcceuilPage> {
         children: <Widget>[
           SizedBox(height: 15.0),
           ButtonChoicePage(
-              "https://picsum.photos/400/100", "C'est quoi ??", () {navigatorRoute(context, cestQuoiRoute);}),
+              "https://picsum.photos/400/100", "C'est quoi ??", () {route(context, cestQuoiRoute);}),
           SizedBox(height: 15.0),
           ButtonChoicePage(
-            "https://picsum.photos/400/100", "Semaine 1", () {navigatorRoute(context, semaine1Route);}),
+            "https://picsum.photos/400/100", "Semaine 1", () {route(context, semaine1Route);}),
           SizedBox(height: 15.0),
           ButtonChoicePage(
-            "https://picsum.photos/400/100", "Semaine 2", () {navigatorRoute(context, semaine2Route);}),
+            "https://picsum.photos/400/100", "Semaine 2", () {route(context, semaine2Route);}),
           SizedBox(height: 15.0),
           ButtonChoicePage(
-              "https://picsum.photos/400/100", "Suivi du poids", () {navigatorRoute(context, suiviPoidsRoute);}),
+              "https://picsum.photos/400/100", "Suivi du poids", () {route(context, suiviPoidsRoute);}),
         ],
       ),
     );

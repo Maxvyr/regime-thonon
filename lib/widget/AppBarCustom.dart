@@ -18,6 +18,8 @@ class AppBarCustom extends AppBar {
           centerTitle: true,
           elevation: 10.0,
           backgroundColor: white,
+          //change la couleur de la fléche retour arrow
+          iconTheme : IconThemeData(color: greenMain),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         );
