@@ -20,7 +20,9 @@ class ListeCompleteIngredientPage extends StatelessWidget {
                 Image.network(
                     "https://www.regimethonon.com/img/jpg/listealiments-regime-thonon.jpg"),
                 TextParagraph( "Parce qu'il est toujours pratique d'acheter tous les ingrédients nécessaires avant de suivre le régime Thonon, voici une petite liste de tous les ingrédients nécessaires :"),
+                //https://www.regimethonon.com/listealiments-regime-thonon.html
                 SizedBox(height: 20.0),
+                TextParagraph("Attention, car certaines denrées alimentaires comme les fruits et les légumes expirent très rapidement. Vérifiez donc bien la date d'expiration de chaque produit.")
               ],
             ),
           ),
