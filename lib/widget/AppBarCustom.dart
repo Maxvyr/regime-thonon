@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:regime_thonon/controller/Colors.dart';
 
 class AppBarCustom extends AppBar {
-  AppBarCustom()
+  AppBarCustom(String title)
       : super(
           title: Text(
-            "Régime Thonon",
+            title,
             style: TextStyle(
               fontSize: 38.4,
               fontFamily: "SourceSansPro",

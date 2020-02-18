@@ -13,7 +13,7 @@ class _AcceuilPageState extends State<AcceuilPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarCustom(),
+      appBar: AppBarCustom("Régime Thonon"),
       body: ListView(
         children: <Widget>[
           SizedBox(height: 15.0),

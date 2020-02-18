@@ -5,7 +5,7 @@ class SuiviPoidsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarCustom(),
+      appBar: AppBarCustom("Suivi du poids"),
       body: Center(
         child: Text("Suivi du poids"),
       ),

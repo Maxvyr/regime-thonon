@@ -7,7 +7,7 @@ class ListeCompleteIngredientPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarCustom(),
+      appBar: AppBarCustom("Liste Ingrédient"),
       body: Center(
         child: SingleChildScrollView(
           child : Container(

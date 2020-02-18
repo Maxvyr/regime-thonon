@@ -9,7 +9,7 @@ class CestQuoiRegimeThononPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarCustom(),
+      appBar: AppBarCustom("Explication"),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -17,15 +17,6 @@ class CestQuoiRegimeThononPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                Text(
-                  "C'est quoi le Régime Thonon ?",
-                  style: TextStyle(
-                    color: greenMain,
-                    fontSize: fontSizeParagrapheTitle,
-                    fontFamily: fontFamily,
-                    fontWeight: fontWeightTitle,
-                  ),
-                ),
                 SizedBox(height: 10.0),
                 Text(
                   "Ce régime dispose de plusieurs caractéristiques qui font de lui un régime minceur unique en son genre.",

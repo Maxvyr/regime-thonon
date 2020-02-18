@@ -12,7 +12,7 @@ class Semaine1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarCustom(),
+      appBar: AppBarCustom("Semaine 1"),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -20,7 +20,6 @@ class Semaine1Page extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                TextTitle("Détails de la semaine 1"),
                 SizedBox(height: 10.0),
                 TextParagraph(
                     "Découvrez le menu Thonon de chaque repas pour la première semaine du régime."),
