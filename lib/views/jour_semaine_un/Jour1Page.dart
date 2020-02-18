@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:regime_thonon/widget/JourBasePage.dart';
+
+class Jour1Page extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return JourPage("Jour 1",
+      "Outre les recommandations ci-dessous, n'oubliez pas également que le sucre de synthèse est autorisé dans le café, que le sel est à bannir au maximum dans ce régime et qu'il vous faudrait limiter au maximum le recours aux huiles dans les salades.",
+      "Au déjeuner, vous avez le droit de consommer deux œufs durs (de calibre moyen), avec des épinards sans sel et sans aucun autre produit ajouté (donc pas de beurre,...).\nPour donner plus de goût à vos aliments, vous pouvez presser du jus de citron et le répartir équitablement sur vos épinards. Le citron jaune a en effet la particularité d'être un aliment très peu calorique, le citron jaune ne contient que seulement 40 kcalories pour 100 grammes..\nNe pas rajouter d'autres aliments, et consommer vos œufs durs sans mayonnaise ou autres produits ajoutés.",
+      "Au dîner, vous pouvez consommer de la salade verte (au choix : mâches, salade verte, roquette). Pour l'assaisonnement de votre salade, vous pouvez utiliser du vinaigre mais sans huile, avec du jus de citron pour accompagner.\nConsommer du céleri à volonté. Le céleri, comme la majeure partie des autres légumes, ne contient que très peu de calories : son apport calorique se situe à 18 kcalories pour 100 grammes, ce qui est très faible. Mais attention, car il faut impérativement consommer du céleri frais et non traité chimiquement, donc il faut éviter tous les céleris industriels qui sont traités pour la conservation alimentaire, et qui globalement ont un apport calorique beaucoup plus élevé (en raison notamment de la forte contenance de mayonnaise, ainsi que de divers autres ingrédients). Pour trouver du céleri frais, rendez-vous au rayon légumes de votre supermarché. Il est également conseiller de consommer le céleri à la vapeur, cuit ou bien encore cru avec un assaisonnement comme du jus de citron (évitez donc encore une fois la mayonnaise qui est trop riche, ainsi que les huiles végétales y compris l'huile d'olive). Par repas, prévoyez environ 300 grammes par personne pour le céleri cuit à la vapeur, et 150 grammes par personne pour le céleri cru.\nVous avez le droit de manger 1 grand steak grillé ou bien 3 petits steak hachés (faites revenir le steak haché dans de l'eau bouillante afin de notamment extraire la matière grasse ou sinon faites grillés vos steaks dans votre four sans ajouter de matières grasses). Si votre budget est élevé, vous pouvez également acheter de la viande bovine chez le boucher, la viande sera notamment plus fraîche et moins grasses.",
+    );
+  }
+}

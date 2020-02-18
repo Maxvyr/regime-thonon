@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:regime_thonon/controller/Colors.dart';
 import 'package:regime_thonon/controller/Routes.dart';
 import 'package:regime_thonon/widget/AppBarCustom.dart';
 import 'package:regime_thonon/widget/ButtonStandard.dart';
 import 'package:regime_thonon/widget/ListProduct.dart';
 import 'package:regime_thonon/widget/TextParagraph.dart';
 import 'package:regime_thonon/widget/TextTitle.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Semaine2Page extends StatelessWidget {
   @override
