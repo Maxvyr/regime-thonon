@@ -116,7 +116,8 @@ class Semaine1Page extends StatelessWidget {
                   onPressed: () {
                     launch("https://www.regimethonon.com/livre/");
                   },
-                  color: greenMain,
+                  color: greenButton,
+                  hoverColor: greenMain,
                   textColor: white,
                   elevation: 15.0,
                   shape: RoundedRectangleBorder(

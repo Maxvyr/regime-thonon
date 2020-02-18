@@ -16,7 +16,8 @@ class ButtonStandard extends StatelessWidget {
       onPressed: () {
         Navigator.pushNamed(context, route);
       },
-      color: greenMain,
+      color: greenButton,
+      hoverColor: greenMain,
       textColor: white,
       elevation: 15.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
