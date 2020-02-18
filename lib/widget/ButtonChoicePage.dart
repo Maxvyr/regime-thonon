@@ -29,24 +29,20 @@ class ButtonChoicePage extends StatelessWidget {
           elevation: 25.0,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Stack(
+            fit: StackFit.loose,
+            alignment: AlignmentDirectional.topCenter,
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  textButton,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontFamily: "SourceSansPro",
-                  ),
-                ),
+              Image.network(
+                imageButton,
+                fit: BoxFit.cover,
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Image.network(
-                  imageButton,
-                  fit: BoxFit.contain,
+              Text(
+                textButton,
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontFamily: "SourceSansPro",
+                  color: white,
                 ),
               ),
             ],
