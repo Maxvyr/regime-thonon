@@ -107,17 +107,6 @@ class Semaine2Page extends StatelessWidget {
                 SizedBox(height: 20.0),
                 ButtonStandard(jour14Route, "Jour 14 en détails"),
                 SizedBox(height: 20.0),
-                RaisedButton(
-                  onPressed: () {
-                    launch("https://www.regimethonon.com/livre/");
-                  },
-                  color: greenMain,
-                  textColor: white,
-                  elevation: 15.0,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0)),
-                  child: Text("Télécharger la méthode complète"),
-                ),
               ],
             ),
           ),

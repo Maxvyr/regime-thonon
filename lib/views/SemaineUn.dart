@@ -123,6 +123,7 @@ class Semaine1Page extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0)),
                   child: Text("Télécharger la méthode complète"),
                 ),
+                SizedBox(height: 20.0),
               ],
             ),
           ),
