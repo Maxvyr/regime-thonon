@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'controller/Routes.dart';
-import 'views/AcceuilPage.dart';
+import 'views/AccueilPage.dart';
 import 'views/CestQuoiRegimeThonon.dart';
 import 'views/ListeCompleteIngredient.dart';
 import 'views/SemaineDeux.dart';
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       title: "Régime Thonon",
       initialRoute: acceuilPageRoute,
       routes: {
-        acceuilPageRoute : (context) => AcceuilPage(),
+        acceuilPageRoute : (context) => AccueilPage(),
         cestQuoiRoute : (context) => CestQuoiRegimeThononPage(),
         listeIngredientRoute : (context) => ListeCompleteIngredientPage(),
         semaine1Route : (context) => Semaine1Page(),

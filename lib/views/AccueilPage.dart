@@ -4,12 +4,12 @@ import 'package:regime_thonon/controller/Routes.dart';
 import 'package:regime_thonon/widget/AppBarCustom.dart';
 import 'package:regime_thonon/widget/ButtonChoicePage.dart';
 
-class AcceuilPage extends StatefulWidget {
+class AccueilPage extends StatefulWidget {
   @override
-  _AcceuilPageState createState() => _AcceuilPageState();
+  _AccueilPageState createState() => _AccueilPageState();
 }
 
-class _AcceuilPageState extends State<AcceuilPage> {
+class _AccueilPageState extends State<AccueilPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
