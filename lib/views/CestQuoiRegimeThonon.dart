@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:regime_thonon/controller/Colors.dart';
+import 'package:regime_thonon/controller/Routes.dart';
 import 'package:regime_thonon/controller/Variables.dart';
 import 'package:regime_thonon/widget/AppBarCustom.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:regime_thonon/widget/ButtonStandard.dart';
 
 class CestQuoiRegimeThononPage extends StatelessWidget {
   @override
@@ -129,17 +130,8 @@ class CestQuoiRegimeThononPage extends StatelessWidget {
                     fontFamily: fontFamily,
                   ),
                 ),
-                RaisedButton(
-                  onPressed: () {
-                  launch(
-                      "https://www.regimethonon.com/listealiments-regime-thonon.html");
-                },
-                color: greenMain,
-                textColor: white,
-                elevation: 15.0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                child: Text("Voir la liste compléte"),
-                ),
+                SizedBox(height: 20.0),
+                ButtonStandard(listeIngredientRoute, "Voir la liste compléte"),
                 SizedBox(height: 20.0),
                 Text(
                   "Pourquoi est-ce un régime rapide et efficace ?",
