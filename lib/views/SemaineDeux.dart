@@ -24,94 +24,89 @@ class Semaine2Page extends StatelessWidget {
                 TextParagraph(
                     "Découvrez le menu Thonon de chaque repas pour la première semaine du régime."),
                 SizedBox(height: 20.0),
-                //Jour 1
-                TextTitle("Jour 1"),
+                //Jour 8
+                TextTitle("Jour 8"),
                 SizedBox(height: 10.0),
                 ListProduct(
-                    "Matin : café vert ou thé vert sans sucre et à volonté\n (sans lait)"),
+                    "Matin : du thé ou du café vert sans sucre à volonté"),
                 ListProduct(
-                    "Midi : 2 œufs durs avec des épinards sans sel et à volonté"),
+                    "Midi : 2 œufs durs, avec des épinards sans sel à volonté"),
                 ListProduct(
-                    "Soir : 1 grand steak grillé (ou alors 3 steak hachés) avec une salade verte et du céleri à volonté (du céleri fait maison, et pas avec une vinaigrette faite maison : du jus de citron avec un yaourt nature 0%)"),
+                    "Soir : 1 grand steak grillé (ou encore 3 petits steaks hachés), de la salade verte avec du céleri à volonté (préparez à la maison avec votre propre sauce, ne pas acheter de barquette toute prête)"),
                 SizedBox(height: 20.0),
-                ButtonStandard(jour1Route, "Jour 1 en détails"),
+                ButtonStandard(jour8Route, "Jour 8 en détails"),
                 SizedBox(height: 20.0),
-                //Jour 2
-                TextTitle("Jour 2"),
+                //Jour 9
+                TextTitle("Jour 9"),
                 SizedBox(height: 10.0),
                 ListProduct(
-                    "Matin : du café vert ou du thé vert sans sucre, \navec un peu de lait (environ 100ml)"),
+                    "Matin : du café vert ou du thé sans sucre, avec un peu de lait (environ 100ml)"),
                 ListProduct(
-                    "Midi : 1 grand steak grillé, de la salade verte avec  des tomates assaisonnées avec une sauce faite maison : du jus de citron avec un yaourt 0% nature) + des fruits à volonté"),
-                ListProduct("Soir : jambon cuit à volonté"),
+                    "Midi : 1 grand steak, de la salade verte, des tomates, ainsi que des fruits à volonté"),
+                ListProduct("Soir : des tranches de jambon cuit à volonté (aucune limite, jusqu'à en être rassasié)"),
                 SizedBox(height: 20.0),
-                ButtonStandard(jour2Route, "Jour 2 en détails"),
+                ButtonStandard(jour9Route, "Jour 9 en détails"),
                 SizedBox(height: 20.0),
-                //Jour 3
-                TextTitle("Jour 3"),
+                //Jour 10
+                TextTitle("Jour 10"),
                 SizedBox(height: 10.0),
                 ListProduct(
-                    "Matin : du café vert ou du thé vert sans sucre, avec un petit pain aux céréales (du pain complet par exemple)"),
+                    "Matin : du café vert ou du thé sans sucre, avec un petit pain aux céréales (du pain complet)"),
                 ListProduct(
-                    "Midi : 2 œufs durs, avec une salade verte avec des tomates à volonté (assaisonnées avec une sauce maison : du jus de citron avec un yaourt nature 0%)"),
+                    "Midi : 2 œufs durs, avec de la salade verte et des tomates à volonté (faites maison avec votre propre sauce au jus de citron avec du yaourt nature 0%)"),
                 ListProduct(
-                    "Soir : du jambon cuit, et de la salade verte à volonté."),
+                    "Soir : du jambon cuit, ainsi que de la salade verte à volonté (la salade verte faite maison avec votre propre sauce)"),
                 SizedBox(height: 20.0),
-                ButtonStandard(jour3Route, "Jour 3 en détails"),
+                ButtonStandard(jour10Route, "Jour 10 en détails"),
                 SizedBox(height: 20.0),
-                //Jour 4
-                TextTitle("Jour 4"),
+                //Jour 11
+                TextTitle("Jour 11"),
+                SizedBox(height: 10.0),
+                ListProduct(
+                    "Matin : du café vert ou du thé sans sucre, avec un petit pain"),
+                ListProduct(
+                    "Midi : 1 œuf dur, avec une salade de carottes crues (ou des carottes cuites selon votre convenance) + 1 morceau de gruyère (que vous pouvez également remplacer par un autre fromage à pâte dure)"),
+                ListProduct(
+                    "Soir : des fruits à volonté (voir notre liste de fruits à volonté) + 1 yaourt nature entier"),
+                SizedBox(height: 20.0),
+                ButtonStandard(jour11Route, "Jour 11 en détails"),
+                SizedBox(height: 20.0),
+                //Jour 12
+                TextTitle("Jour 12"),
+                SizedBox(height: 10.0),
+                ListProduct(
+                    "Matin : salade de carottes râpées, avec un café noir ou un thé vert"),
+                ListProduct(
+                    "Midi : du poisson au court bouillon, avec une salade de 2 tomates (avec votre sauce faite maison : du jus de citron avec éventuellement du yaourt nature 0%)"),
+                ListProduct(
+                    "Soir : 1 steak normal, avec de la salade verte à volonté (avec votre sauce faite maison : du jus de citron avec éventuellement du yaourt nature 0%)"),
+                SizedBox(height: 20.0),
+                ButtonStandard(jour12Route, "Jour 12 en détails"),
+                SizedBox(height: 20.0),
+                //Jour 13
+                TextTitle("Jour 13"),
                 SizedBox(height: 10.0),
                 ListProduct(
                     "Matin : du café vert ou du thé vert sans sucre, avec un petit pain"),
                 ListProduct(
-                    "Midi : 1 œuf dur, avec des carottes crues ou cuites au choix (faites maison toujours, ne pas achetez de barquettes toutes prêtes qui sont déjà assaisonnées et très caloriques), avec un morceau de gruyère"),
+                    "Midi : du filet de poulet grillé sans huile à volonté (aucune limite, jusqu'à en être rassasié)"),
                 ListProduct(
-                    "Soir : des fruits à volonté, avec en plus un yaourt nature entier"),
+                    "Soir : 2 œufs durs, avec une salade de carottes crues avec du jus de citron (ou éventuellement des carottes cuites selon votre convenance)"),
                 SizedBox(height: 20.0),
-                ButtonStandard(jour4Route, "Jour 4 en détails"),
+                ButtonStandard(jour13Route, "Jour 13 en détails"),
                 SizedBox(height: 20.0),
-                //Jour 5
-                TextTitle("Jour 5"),
+                //Jour 14
+                TextTitle("Jour 14"),
                 SizedBox(height: 10.0),
                 ListProduct(
-                    "Matin : des carottes râpées (fait maison, sans acheter de barquettes toutes prêts car ces mêmes barquettes présentent l'inconvénient majeur d'être déjà assaisonnées... trop assaisonnées) + du café vert ou du thé (au choix) sans sucre"),
+                    "Matin : du café vert ou du thé vert ou une tisane au citron"),
                 ListProduct(
-                    "Midi : du poisson au court bouillon + une salade de 2 tomates (avec une sauce faite maison : du jus de citron + un yaourt nature 0%)"),
+                    "Midi : 1 grand steak, avec des fruits à volonté"),
                 ListProduct(
-                    "Soir : 1 steak normal + de la salade verte à volonté (toujours avec une sauce maison : du jus de citron + 1 yaourt nature 0%)"),
+                    "Soir : manger tous ce que vous souhaitez mais dans des proportions raisonnables (pas de sucreries ou d'alcool cependant)"),
                 SizedBox(height: 20.0),
-                ButtonStandard(jour5Route, "Jour 5 en détails"),
+                ButtonStandard(jour14Route, "Jour 14 en détails"),
                 SizedBox(height: 20.0),
-                //Jour 6
-                TextTitle("Jour 6"),
-                SizedBox(height: 10.0),
-                ListProduct(
-                    "Matin : du café vert ou du thé vert sans sucre, avec un petit pain"),
-                ListProduct(
-                    "Midi : filets de poulet à volonté cuit sans huile au four"),
-                ListProduct(
-                    "Soir : 2 œufs durs, avec une salade de carottes crues (toujours faite maison avec votre propre sauce : du jus de citron avec un yaourt nature 0%) ou des carottes cuites à volonté."),
-                SizedBox(height: 20.0),
-                ButtonStandard(jour6Route, "Jour 6 en détails"),
-                SizedBox(height: 20.0),
-                //Jour 7
-                TextTitle("Jour 7"),
-                SizedBox(height: 10.0),
-                ListProduct(
-                    "Matin : du café vert ou du thé vert ou bien encore une tisane au citron"),
-                ListProduct(
-                    "Midi : consommer 1 grand steak, avec des fruits à volonté (voir la liste : les fruits à volonté, comment choisir?)"),
-                ListProduct(
-                    "Soir : vous pouvez manger (dans des proportions normales) ce que vous souhaitez (pas de sucreries, ni d'alcool)"),
-                SizedBox(height: 20.0),
-                ButtonStandard(jour7Route, "Jour 7 en détails"),
-                SizedBox(height: 20.0),
-                //tableau
-                TextTitle("Le tableau de la semaine 1"),
-                Image.network(
-                    "https://www.regimethonon.com/regime-thonon-menu-semaine-1.png"),
-                SizedBox(height: 10.0),
                 RaisedButton(
                   onPressed: () {
                     launch("https://www.regimethonon.com/livre/");
