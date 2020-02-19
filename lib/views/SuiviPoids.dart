@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sparkline/flutter_sparkline.dart';
-import 'package:regime_thonon/controller/Variables.dart';
 import 'package:regime_thonon/widget/AppBarCustom.dart';
 import 'package:regime_thonon/widget/TextTitle.dart';
 
@@ -11,7 +10,21 @@ class SuiviPoidsPage extends StatefulWidget {
 
 class _SuiviPoidsPageState extends State<SuiviPoidsPage> {
 
-  var data = [50.0];
+  //Variable
+  int day = 0;
+  List<double> dataWeight = [
+    0
+  ];
+
+  List<int> dataDays = [
+    0,
+  ];
+
+  showList (List lists) {
+      lists.forEach((position) => print("$position"));
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +32,7 @@ class _SuiviPoidsPageState extends State<SuiviPoidsPage> {
       appBar: AppBarCustom("Suivi du poids"),
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width * 0.88,
+          width: MediaQuery.of(context).size.width * 0.95,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -30,14 +43,18 @@ class _SuiviPoidsPageState extends State<SuiviPoidsPage> {
                 decoration: InputDecoration(labelText: "Entrez mon poids"),
                 onSubmitted: (String value) {
                   setState(() {
-                    poidsJourJ = double.parse(
-                        value); //convertion du String en double pour le stock dans la variable
-                    print(poidsJourJ);
+                    dataWeight.add(double.parse(value));
+                    day++; 
+                    dataDays.add(day);
+                    showList(dataWeight);
                   });
                 },
               ),
               TextTitle("Suivie du poids jour aprés jour"),
-              Container(child: Sparkline(data: data))
+              Container(
+                child: Sparkline(data: dataWeight),
+              ),
+              //design Sparkline to do
             ],
           ),
         ),
