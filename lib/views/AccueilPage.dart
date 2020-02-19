@@ -16,18 +16,35 @@ class _AccueilPageState extends State<AccueilPage> {
       appBar: AppBarCustom("Régime Thonon"),
       body: ListView(
         children: <Widget>[
-          SizedBox(height: 15.0),
+          //button C'est quoi
           ButtonChoicePage(
-              "https://picsum.photos/400/100", "C'est quoi ??", () {route(context, cestQuoiRoute);}),
-          SizedBox(height: 15.0),
+            "https://www.teletravailler.be/storage/main/man1.png",
+            () {
+              route(context, cestQuoiRoute);
+            },
+            textButton: "C'est quoi ??",
+          ),
+          //button Semaine 1
           ButtonChoicePage(
-            "https://picsum.photos/400/100", "Semaine 1", () {route(context, semaine1Route);}),
-          SizedBox(height: 15.0),
+            "https://misstickvoussimplifieledeclick.files.wordpress.com/2018/11/semaine1.jpg?w=723",
+            () {
+              route(context, semaine1Route);
+            },
+          ),
+          //button Semaine 2
           ButtonChoicePage(
-            "https://picsum.photos/400/100", "Semaine 2", () {route(context, semaine2Route);}),
-          SizedBox(height: 15.0),
+            "https://www.guide-maman-bebe.com/sites/default/files/field/image/semaine2.jpg",
+            () {
+              route(context, semaine2Route);
+            },
+          ),
+          //button trtacking poids
           ButtonChoicePage(
-              "https://picsum.photos/400/100", "Suivi du poids", () {route(context, suiviPoidsRoute);}),
+            "https://www.blog-mincir.com/wp-content/uploads/2012/04/regime-thonon.jpg",
+            () {
+              route(context, suiviPoidsRoute);
+            },
+          ),
         ],
       ),
     );
