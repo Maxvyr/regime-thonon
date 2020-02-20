@@ -10,8 +10,8 @@
 
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="regime_thonon"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Régime Thonon"
+        android:icon="@mipmap/logo_app">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

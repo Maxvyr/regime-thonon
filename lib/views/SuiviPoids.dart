@@ -31,34 +31,45 @@ class _SuiviPoidsPageState extends State<SuiviPoidsPage> {
     return Scaffold(
       appBar: AppBarCustom("Suivi du poids"),
       body: Center(
-        child: Container(
-          width: MediaQuery.of(context).size.width * 0.95,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              // champs saise text
-              TextField(
-                keyboardType:
-                    TextInputType.number, //force a afficher le clavier nombre
-                decoration: InputDecoration(labelText: "Entrez mon poids"),
-                onSubmitted: (String value) {
-                  setState(() {
-                    dataWeight.add(double.parse(value));
-                    day++; 
-                    dataDays.add(day);
-                    showList(dataWeight);
-                  });
-                },
-              ),
-              TextTitle("Suivie du poids jour aprés jour"),
-              Container(
-                child: Sparkline(data: dataWeight),
-              ),
-              //design Sparkline to do
-            ],
-          ),
-        ),
+        child: TextTitle("Coming Soon")
       ),
     );
+  }
+
+
+  //First built page Tracking programme
+  Scaffold buildScaffold(BuildContext context) {
+    return Scaffold(
+    appBar: AppBarCustom("Suivi du poids"),
+    body: Center(
+      child: Container(
+        width: MediaQuery.of(context).size.width * 0.95,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            // champs saise text
+            TextField(
+              keyboardType:
+                  TextInputType.number, //force a afficher le clavier nombre
+              decoration: InputDecoration(labelText: "Entrez mon poids"),
+              onSubmitted: (String value) {
+                setState(() {
+                  dataWeight.add(double.parse(value));
+                  day++; 
+                  dataDays.add(day);
+                  showList(dataWeight);
+                });
+              },
+            ),
+            TextTitle("Suivie du poids jour aprés jour"),
+            Container(
+              child: Sparkline(data: dataWeight),
+            ),
+            //design Sparkline to do
+          ],
+        ),
+      ),
+    ),
+  );
   }
 }
